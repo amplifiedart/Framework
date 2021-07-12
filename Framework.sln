@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.Windows.Forms", "AA.Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.System", "AA.System\AA.System.csproj", "{98DA2A08-5CC1-404E-A1BC-4E0DDDC38EFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameWorkTests", "FrameWorkTests\FrameWorkTests.csproj", "{EAC84E38-5D8A-4D07-A28D-0F6ECABA831E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{98DA2A08-5CC1-404E-A1BC-4E0DDDC38EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98DA2A08-5CC1-404E-A1BC-4E0DDDC38EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98DA2A08-5CC1-404E-A1BC-4E0DDDC38EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC84E38-5D8A-4D07-A28D-0F6ECABA831E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC84E38-5D8A-4D07-A28D-0F6ECABA831E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC84E38-5D8A-4D07-A28D-0F6ECABA831E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC84E38-5D8A-4D07-A28D-0F6ECABA831E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
