@@ -1,5 +1,8 @@
-Amplified Framework.
+# Amplified Art Framework
 
-The old school C# Framework build upon .Net Framework 4.8
-***
-test
+## Version 2021.07.12
+
+- Setting up initial framework
+- Added Generic Range classes and interfaces
+- Working out GitHub, Licensing and the Readme file
+- Tomorrow is another day ;)
