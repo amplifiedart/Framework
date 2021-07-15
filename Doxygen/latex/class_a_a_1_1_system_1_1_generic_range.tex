@@ -1,0 +1,222 @@
+\hypertarget{class_a_a_1_1_system_1_1_generic_range}{}\doxysection{AA.\+System.\+Generic\+Range$<$ T $>$ Class Template Reference}
+\label{class_a_a_1_1_system_1_1_generic_range}\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+
+
+Range object used to describe a range with a lower and upper value of type T.  
+
+
+Inheritance diagram for AA.\+System.\+Generic\+Range$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_a_a_1_1_system_1_1_generic_range}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a2eadf23c4afec2aca11f8de2f8cfaf31}{Generic\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a2eadf23c4afec2aca11f8de2f8cfaf31}{Generic\+Range$<$\+T$>$}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a2a6416bee0b336baebb629e7a668d6b1}{Generic\+Range}} (T start, T end)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a2eadf23c4afec2aca11f8de2f8cfaf31}{Generic\+Range$<$\+T$>$}} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_ac46bc73a8b9838e1f8061394bc692ef6}{Compare\+To}} (object obj)
+\begin{DoxyCompactList}\small\item\em Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a234d95eac871dc294124ccb682740b3c}\label{class_a_a_1_1_system_1_1_generic_range_a234d95eac871dc294124ccb682740b3c}} 
+int {\bfseries Compare\+To} (T obj)
+\item 
+int \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a78673b2db36c8717a9e91258e8182469}{Compare\+To}} (\mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{Generic\+Range}}$<$ T $>$ range)
+\begin{DoxyCompactList}\small\item\em Compares to. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a26368eca2c9c82829e0aa4808fec9827}{Contains}} (T value)
+\begin{DoxyCompactList}\small\item\em Determines whether this instance contains the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_a_a_1_1_system_adab64a2749d4d2e9750be3f0eeeb80e7}{Range\+Match\+Type}} \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a02d00df07460b839271eb9bc1e79ab80}{Match}} (\mbox{\hyperlink{interface_a_a_1_1_system_1_1_i_range}{IRange}}$<$ T $>$ range)
+\begin{DoxyCompactList}\small\item\em Matches the specified range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_a_a_1_1_system_adab64a2749d4d2e9750be3f0eeeb80e7}{Range\+Match\+Type}} \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a46b729a8eb58e9c1055f92da41dfa42c}{Match}} (T value)
+\begin{DoxyCompactList}\small\item\em Matches the specified value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a604150d15007f51fa5cd8618339daacb}{Start}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the start. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_ad75abcc979c9460c3b6a6bde00f912cb}{End}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Range object used to describe a range with a lower and upper value of type T. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+AA.\+System.\+IRange$<$\+T$>$
+
+
+\end{DoxySeeAlso}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em IComparable}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a2eadf23c4afec2aca11f8de2f8cfaf31}\label{class_a_a_1_1_system_1_1_generic_range_a2eadf23c4afec2aca11f8de2f8cfaf31}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!GenericRange@{GenericRange}}
+\index{GenericRange@{GenericRange}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GenericRange()}{GenericRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.\mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{Generic\+Range}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a2eadf23c4afec2aca11f8de2f8cfaf31}{Generic\+Range$<$\+T$>$}} class. 
+
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a2a6416bee0b336baebb629e7a668d6b1}\label{class_a_a_1_1_system_1_1_generic_range_a2a6416bee0b336baebb629e7a668d6b1}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!GenericRange@{GenericRange}}
+\index{GenericRange@{GenericRange}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GenericRange()}{GenericRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.\mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{Generic\+Range}} (\begin{DoxyParamCaption}\item[{T}]{start,  }\item[{T}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range_a2eadf23c4afec2aca11f8de2f8cfaf31}{Generic\+Range$<$\+T$>$}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The start.\\
+\hline
+{\em end} & The end.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a78673b2db36c8717a9e91258e8182469}\label{class_a_a_1_1_system_1_1_generic_range_a78673b2db36c8717a9e91258e8182469}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.Compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{Generic\+Range}}$<$ T $>$}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compares to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & The range.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_ac46bc73a8b9838e1f8061394bc692ef6}\label{class_a_a_1_1_system_1_1_generic_range_ac46bc73a8b9838e1f8061394bc692ef6}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.Compare\+To (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & An object to compare with this instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value that indicates the relative order of the objects being compared. The return value has these meanings\+: Value Meaning Less than zero This instance precedes {\itshape obj}  in the sort order. Zero This instance occurs in the same position in the sort order as {\itshape obj} . Greater than zero This instance follows {\itshape obj}  in the sort order. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a26368eca2c9c82829e0aa4808fec9827}\label{class_a_a_1_1_system_1_1_generic_range_a26368eca2c9c82829e0aa4808fec9827}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines whether this instance contains the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}contains\mbox{]} \mbox{[}the specified value\mbox{]}; otherwise, {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_a_a_1_1_system_1_1_i_range_ad1ab94d7c363f7b967b7537c33da8bd2}{AA.\+System.\+IRange$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a02d00df07460b839271eb9bc1e79ab80}\label{class_a_a_1_1_system_1_1_generic_range_a02d00df07460b839271eb9bc1e79ab80}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!Match@{Match}}
+\index{Match@{Match}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Match()}{Match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_a_a_1_1_system_adab64a2749d4d2e9750be3f0eeeb80e7}{Range\+Match\+Type}} \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_a_1_1_system_1_1_i_range}{IRange}}$<$ T $>$}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Matches the specified range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & The range.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_a_a_1_1_system_1_1_i_range_a65b03b5c0e57603e8d462193ced61e49}{AA.\+System.\+IRange$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a46b729a8eb58e9c1055f92da41dfa42c}\label{class_a_a_1_1_system_1_1_generic_range_a46b729a8eb58e9c1055f92da41dfa42c}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!Match@{Match}}
+\index{Match@{Match}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Match()}{Match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_a_a_1_1_system_adab64a2749d4d2e9750be3f0eeeb80e7}{Range\+Match\+Type}} \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.Match (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Matches the specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_a_a_1_1_system_1_1_i_range_ae5eb97c25deddd659e6b2f134e933ecc}{AA.\+System.\+IRange$<$ T $>$}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_ad75abcc979c9460c3b6a6bde00f912cb}\label{class_a_a_1_1_system_1_1_generic_range_ad75abcc979c9460c3b6a6bde00f912cb}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!End@{End}}
+\index{End@{End}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{End}{End}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.End\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the end. 
+
+The end. \mbox{\Hypertarget{class_a_a_1_1_system_1_1_generic_range_a604150d15007f51fa5cd8618339daacb}\label{class_a_a_1_1_system_1_1_generic_range_a604150d15007f51fa5cd8618339daacb}} 
+\index{AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}!Start@{Start}}
+\index{Start@{Start}!AA.System.GenericRange$<$ T $>$@{AA.System.GenericRange$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Start}{Start}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_a_a_1_1_system_1_1_generic_range}{AA.\+System.\+Generic\+Range}}$<$ T $>$.Start\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the start. 
+
+The start. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Arjo/\+Projects/\+VS2019/\+Framework/\+AA.\+System/Generic\+Range.\+cs\end{DoxyCompactItemize}
