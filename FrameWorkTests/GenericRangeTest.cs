@@ -40,5 +40,26 @@ namespace FrameWorkTests
 			Assert.AreEqual(firstRange.CompareTo(secondRange), -1, "5-10 vs 6-8");
 
 		}
+
+		[TestMethod]
+		public RangeMatchRangeTest()
+		{
+			GenericRange<int> target = new GenericRange<int>(6, 14);
+
+			GenericRange<int>[] testRanges = new GenericRange<int>[]
+			{
+				new GenericRange<int>(1,4),
+				new GenericRange<int>(3,7),
+				new GenericRange<int>(6,10),
+				new GenericRange<int>(6,14),
+				new GenericRange<int>(8,12),
+				new GenericRange<int>(10,14),
+				new GenericRange<int>(12,17),
+				new GenericRange<int>(16,19),
+				new GenericRange<int>(1,19)
+			};
+
+
+		}
 	}
 }

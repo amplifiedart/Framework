@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.Windows.Forms", "AA.Windows.Forms\AA.Windows.Forms.csproj", "{F392A412-4A80-4928-B66B-3358F52E37F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.Forms", "AA.Windows.Forms\AA.Forms.csproj", "{F392A412-4A80-4928-B66B-3358F52E37F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.System", "AA.System\AA.System.csproj", "{98DA2A08-5CC1-404E-A1BC-4E0DDDC38EFC}"
 EndProject
@@ -40,9 +40,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		BuildVersion_UseGlobalSettings = False
-		BuildVersion_StartDate = 2000/1/1
-		BuildVersion_BuildVersioningStyle = YearStamp.MonthStamp.DayStamp.TimeStamp
 		SolutionGuid = {8ACD0B12-A6AC-4519-9D05-21F7DBA7FC71}
+		BuildVersion_BuildVersioningStyle = YearStamp.MonthStamp.DayStamp.TimeStamp
+		BuildVersion_StartDate = 2000/1/1
+		BuildVersion_UseGlobalSettings = False
 	EndGlobalSection
 EndGlobal
