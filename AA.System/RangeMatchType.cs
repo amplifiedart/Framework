@@ -56,7 +56,7 @@ namespace AA.System
 		/// <summary>
 		/// The range starts befor and end after the other range
 		/// </summary>
-		OverlapFull = StartBefore | EndAfter,
+		Overlap = StartBefore | EndAfter,
 		/// <summary>
 		/// The range starts and ends before the start of the other range
 		/// </summary>
@@ -85,5 +85,9 @@ namespace AA.System
 		/// The range starts in and ends after the other range
 		/// </summary>
 		StartsIn = StartAfter | EndAfter,
+		/// <summary>
+		/// The range is part of the other range
+		/// </summary>
+		PartOf = StartAfter | EndBefore
 	}
 }

@@ -72,12 +72,6 @@ namespace AA.System
 
 		}
 
-		public int CompareTo(T obj)
-		{
-			return 0;
-			
-		}
-
 		/// <summary>
 		/// Compares to.
 		/// </summary>
@@ -101,12 +95,62 @@ namespace AA.System
 			return value.CompareTo(Start) >= 0 && value.CompareTo(End) <= 0;
 		}
 
+		public IRange<T> Intersec(IRange<T> range)
+		{
+			int startCompare = range.Start.CompareTo(Start);
+			T start = startCompare > 0 ? range.Start : Start;
+
+
+			if (start > end)
+				return null;
+			else
+				return new GenericRange<T>(start, end);
+
+		}
+
+		/// <summary>
+		/// Matches the specified range.
+		/// </summary>
+		/// <param name="range">The range.</param>
+		/// <returns></returns>
 		public RangeMatchType Match(IRange<T> range)
 		{
 			RangeMatchType result = RangeMatchType.None;
+
+			int startCompare = range.Start.CompareTo(Start);
+			int endCompare;
+			if (startCompare > 0)
+			{
+				endCompare = range.Start.CompareTo(End);
+				result = endCompare > 0 ? RangeMatchType.StartAfterEnd : RangeMatchType.StartAfter;
+			}
+			else
+				result = startCompare < 0 ? RangeMatchType.StartBefore : RangeMatchType.StartEqual;
+
+			endCompare = range.End.CompareTo(End);
+			if (endCompare < 0)
+			{
+				startCompare = range.End.CompareTo(Start);
+				result = result | (startCompare < 0 ? RangeMatchType.EndBeforeStart : RangeMatchType.EndBefore);
+			}
+			else
+				result = result | (endCompare > 0 ? RangeMatchType.EndAfter : RangeMatchType.EndEqual);
+
+
+			return result;
 		}
 
+		/// <summary>
+		/// Matches the specified value.
+		/// </summary>
+		/// <param name="value">The value.</param>
+		/// <returns></returns>
 		public RangeMatchType Match(T value)
+		{
+			return Match(new GenericRange<T>(value, value));
+		}
+
+		public IRange<T> Union(IRange<T> range)
 		{
 			throw new NotImplementedException();
 		}

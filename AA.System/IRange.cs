@@ -11,7 +11,7 @@ namespace AA.System
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	/// <seealso cref="System.IComparable" />
-	public interface IRange<T> : IComparable
+	public interface IRange<T> : IComparable where T : IComparable
 	{
 		/// <summary>
 		/// Gets or sets the start.
@@ -50,5 +50,19 @@ namespace AA.System
 		/// <param name="value">The value.</param>
 		/// <returns></returns>
 		RangeMatchType Match(T value);
+
+		/// <summary>
+		/// Unions the specified range.
+		/// </summary>
+		/// <param name="range">The range.</param>
+		/// <returns></returns>
+		IRange<T> Union(IRange<T> range);
+
+		/// <summary>
+		/// Intersecs the specified range.
+		/// </summary>
+		/// <param name="range">The range.</param>
+		/// <returns></returns>
+		IRange<T> Intersec(IRange<T> range);
 	}
 }
