@@ -63,6 +63,6 @@ namespace AA.System
 		/// </summary>
 		/// <param name="range">The range.</param>
 		/// <returns></returns>
-		IRange<T> Intersec(IRange<T> range);
+		IRange<T> Intersect(IRange<T> range);
 	}
 }

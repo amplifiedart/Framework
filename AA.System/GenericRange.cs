@@ -95,17 +95,19 @@ namespace AA.System
 			return value.CompareTo(Start) >= 0 && value.CompareTo(End) <= 0;
 		}
 
-		public IRange<T> Intersec(IRange<T> range)
+		public IRange<T> Intersect(IRange<T> range)
 		{
 			int startCompare = range.Start.CompareTo(Start);
-			T start = startCompare > 0 ? range.Start : Start;
+			T start = (startCompare > 0) ? range.Start : Start;
+
+			int endCompare = range.End.CompareTo(End);
+			T end = (endCompare < 0) ? range.End : End;
 
 
-			if (start > end)
+			if (start.CompareTo(end) > 0)
 				return null;
 			else
 				return new GenericRange<T>(start, end);
-
 		}
 
 		/// <summary>
@@ -115,7 +117,7 @@ namespace AA.System
 		/// <returns></returns>
 		public RangeMatchType Match(IRange<T> range)
 		{
-			RangeMatchType result = RangeMatchType.None;
+			RangeMatchType result;
 
 			int startCompare = range.Start.CompareTo(Start);
 			int endCompare;
@@ -131,10 +133,10 @@ namespace AA.System
 			if (endCompare < 0)
 			{
 				startCompare = range.End.CompareTo(Start);
-				result = result | (startCompare < 0 ? RangeMatchType.EndBeforeStart : RangeMatchType.EndBefore);
+				result |= (startCompare < 0 ? RangeMatchType.EndBeforeStart : RangeMatchType.EndBefore);
 			}
 			else
-				result = result | (endCompare > 0 ? RangeMatchType.EndAfter : RangeMatchType.EndEqual);
+				result |= (endCompare > 0 ? RangeMatchType.EndAfter : RangeMatchType.EndEqual);
 
 
 			return result;
@@ -152,7 +154,16 @@ namespace AA.System
 
 		public IRange<T> Union(IRange<T> range)
 		{
-			throw new NotImplementedException();
+			if (range.End.CompareTo( Start)<0 | range.Start.CompareTo( End)>0)
+				return null;
+
+			int startCompare = range.Start.CompareTo(Start);
+			T start = (startCompare < 0) ? range.Start : Start;
+
+			int endCompare = range.End.CompareTo(End);
+			T end = (endCompare > 0) ? range.End : End;
+
+			return new GenericRange<T>(start, end);
 		}
 	}
 }

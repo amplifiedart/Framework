@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
+
 namespace FrameWorkTests
 {
 	[TestClass]
@@ -70,6 +71,46 @@ namespace FrameWorkTests
 			Assert.AreEqual(target.Match(14), RangeMatchType.Tail, "14 is part of (6,14)");
 			Assert.AreEqual(target.Match(17), RangeMatchType.OutsideAfter, "17 is outside and after (6,14)");
 		}
+
+		[TestMethod()]
+		public void IntersecTest()
+		{
+			GenericRange<int> partA = new GenericRange<int>(2, 9);
+			GenericRange<int> partB = new GenericRange<int>(6, 12);
+
+			GenericRange<int> partC = (GenericRange<int>) partA.Intersect(partB);
+			GenericRange<int> expected = new GenericRange<int>(6, 9);
+
+			Assert.AreEqual(partC.CompareTo(expected), 0, "Expected part C (6,9)");
+
+			partC = (GenericRange<int>)partB.Intersect(partA);
+			Assert.AreEqual(partC.CompareTo(expected), 0, "Expected part C (6,9)");
+
+			partB = new GenericRange<int>(12, 15);
+			partC = (GenericRange<int>)partA.Intersect(partB);
+			Assert.IsNull(partC, "Intersect with outbound range expects null");
+		}
+
+		[TestMethod()]
+		public void UnionTest()
+		{
+			GenericRange<int> partA = new GenericRange<int>(2, 9);
+			GenericRange<int> partB = new GenericRange<int>(6, 12);
+
+			GenericRange<int> partC = (GenericRange<int>)partA.Union(partB);
+			GenericRange<int> expected = new GenericRange<int>(2, 12);
+
+			Assert.AreEqual(partC.CompareTo(expected), 0, "Expected part C (2,12)");
+
+			partC = (GenericRange<int>)partB.Union(partA);
+			Assert.AreEqual(partC.CompareTo(expected), 0, "Expected part C (2,12)");
+
+			partB = new GenericRange<int>(10, 15);
+			partC = (GenericRange<int>)partA.Union(partB);
+			Assert.IsNull(partC, "Range out of bounds, expected null");
+		}
+
+
 
 		private GenericRange<int>[] SetUpTestRanges()
 		{

@@ -18,7 +18,14 @@ Included in this Framework are:
 
 - Preparing Test cases based on the RangeOperations Spreadsheet
 - Implementing NUnit testing to accomodate the scenario's
-- 
+
+
+### Version 2021.09.27
+
+- Completed Union and Intersect methods
+- Adding DateTimeRange Class and Array for scheduling
+
+
 
 
 
