@@ -49,10 +49,13 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDrivenRangeTest.cs" />
     <Compile Include="GenericRangeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="data.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -73,7 +76,7 @@
   <Import Project="..\packages\MSTest.TestAdapter.2.1.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.2.1.2\build\net45\MSTest.TestAdapter.targets')" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_AssemblyInfoFilename="Properties\AssemblyInfo.cs" BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2000/1/1" BuildVersion_BuildVersioningStyle="YearStamp.MonthStamp.DayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="YearStamp.MonthStamp.DayStamp.TimeStamp" BuildVersion_StartDate="2000/1/1" BuildVersion_UseGlobalSettings="True" BuildVersion_AssemblyInfoFilename="Properties\AssemblyInfo.cs" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
